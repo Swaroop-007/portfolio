@@ -1,5 +1,6 @@
 import React from 'react'
 import {SiLinkedin,SiGmail} from 'react-icons/si'
+import resume from '../assets/Resume.pdf'
 const Contact = () => {
   return (
     <div className="md:px-10 px-7 h-full -mt-8  bg-[#ede8e871]" name="contact">
@@ -25,9 +26,11 @@ const Contact = () => {
         </div>
         <div className="md:w-1/2">
             <p className="mt-16 text-black text-2xl mb-6">Download my resume:   </p>
-            <button className='text-black group border-2 px-6 py-4 font-bold my-2 flex items-center hover:bg-gray-300 hover:border-gray-300'>
-                Resume
-            </button>  
+            <a href={resume} download="Resume_SwaroopPandurangi" target='_blank' >
+                <button className='text-black group border-2 px-6 py-4 font-bold my-2 flex items-center hover:bg-gray-300 hover:border-gray-300'>
+                    Click to download
+                </button>
+             </a>
         </div>
       </div>
       <div className="text-black opacity-50  pb-2 ">
